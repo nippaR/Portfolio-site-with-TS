@@ -4,11 +4,14 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-  ],
+  plugins: [react()],
+  
+  resolve: {
+    alias: [{ find: "@", replacement: path.resolve(__dirname, 'src') }],
+  },
 
-  resolve:{
-    alias:[{find: "@", replacement: path.resolve(__dirname, 'src') }],
+  server: {
+    host: true,        // 👈 Expose to local network (phone)
+    port: 5173,        // Optional: you can set a fixed port
   },
 })
