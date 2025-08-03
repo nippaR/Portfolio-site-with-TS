@@ -1,15 +1,15 @@
-import Navbar from "@/Component/Navbar"
-import {Button, Grid} from '@mui/material'
+import { Navbar } from "@/Component/Navbar"
+import {Grid} from '@mui/material'
+import Hero from "./Component/Hero"
 
 function App() {
 
   return (
       <Grid>
-
         <Navbar/>
-        <Button variant="contained" color="primary">
-          Click Me
-        </Button>
+        <Grid>
+          <Hero/>
+        </Grid>
       </Grid>
   )
 }
