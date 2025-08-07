@@ -12,6 +12,7 @@ function App() {
         <Grid id="home">
           <Home/>
         </Grid>
+        
         <Grid id="category">
           <Hero/>
         </Grid>
