@@ -43,12 +43,12 @@ interface TabPanelProps {
     };
 
     return (
-        <Box sx={{ width:{md:'55%', sm:'100%'}, bgcolor: '#16141E', minHeight: '100vh', mt:5 }}>
+        <Box sx={{ width:{md:'55%', sm:'100%'}, bgcolor: '#16141E', minHeight: 'auto', mt:5 }}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs 
-            value={value} 
-            onChange={handleChange} 
-            aria-label="tabs example" 
+            <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="tabs example"
             textColor="inherit"
             TabIndicatorProps={{ style: { backgroundColor: 'rgba(64, 0, 255, 0.25)' } }}
             variant="fullWidth"

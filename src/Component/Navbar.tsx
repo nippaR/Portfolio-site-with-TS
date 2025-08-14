@@ -24,9 +24,9 @@ export const Navbar = (props: Props) => {
                 <Button variant="text" color="primary" size="small" sx={{ color: "#fff" }} onClick={() => onClickHandler('home')}>Home</Button>
                 <Button variant="text" color="primary" size="small" sx={{ color: "#fff" }} onClick={() => onClickHandler('category')}>Category</Button>
                 <Button variant="text" color="primary" size="small" sx={{ color: "#fff" }} onClick={() => onClickHandler('contact')}>Contact Us</Button>
-                <Button variant="text" color="primary" size="small" sx={{ color: "#fff" }} onClick={() => onClickHandler('projects')}>Sample Projects</Button>
+                <Button variant="text" color="primary" size="small" sx={{ color: "#fff" }} onClick={() => onClickHandler('gallery')}>Gallery</Button>
 
-                <Box display={{ xs: 'none', sm: 'block' }}>
+                <Box display={{ xs: 'block', sm: 'none', backgroundColor: '#fdfdfddc' }}>
                     <TripelLines />
                 </Box>
             </Grid>
