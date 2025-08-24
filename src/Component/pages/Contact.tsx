@@ -3,6 +3,7 @@ import { Grid, Button, IconButton, Typography } from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import videoBG from "@/assets/videoBG.mp4";
+import Priceform from "./Priceform";
 
 type Props = {};
 
@@ -65,23 +66,37 @@ const Contact = (props: Props) => {
             }} />
 
             <Grid size={12} container>
-            <Box
-                sx={{
-                bgcolor: '#150060ff',
-                p: 2,
-                width: { xs: 325, lg: 420 },
-                height: { xs: 130, lg: 150 },
-                mt: 2,
-                ml: 2,
-                borderRadius: '8px',
-                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.22)',
-                '&:hover': {
+                <Box
+                    sx={{
+                    bgcolor: "linear-gradient(to bottom, #0f0c29, #302b63, #24243e)",
+                    p: 2,
+                    ml: 0.4,
+                    width: { xs: 145, lg: 680 },
+                    height: { xs: 200, lg: 550 },
+                    borderRadius: '8px',
+                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                    }}
+                >
+                    <Priceform />
+                </Box>
+
+            <Box>
+                <Box sx={{
+                        bgcolor: '#150060ff',
+                        p: 2,
+                        width: { xs: 325, lg: 420 },
+                        height: { xs: 130, lg: 150 },
+                        mt: 2,
+                        ml: 8,
+                        borderRadius: '8px',
+                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.22)',
+                    '&:hover': {
                     boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)',
                     transform: 'scale(1.05)',
                     transition: 'all 0.3s ease-in-out',
-                },
-                }}
-            >
+                }
+                }}>
+
                 <Typography variant="body1" color="white" sx={{ mb: 1, fontFamily: 'Roboto, sans-serif' }}>
                 Feel free to reach out to us :
                 </Typography>
@@ -100,7 +115,7 @@ const Contact = (props: Props) => {
                 </IconButton>
 
                 {!isMobile && (
-                <>
+                    <>
                     <Button variant="contained" color="primary" sx={{ mt: 3 }} href="https://wa.me/94756506423" target="_blank">
                     Chat with Us
                     </Button>
@@ -109,20 +124,37 @@ const Contact = (props: Props) => {
                     </Button>
                 </>
                 )}
+                </Box>
+            <Box>
+                    <Typography sx={{
+                        fontSize: { xs: '1.0rem', sm: '1.2rem', md: '1.5rem' },
+                        color: 'white',
+                        fontFamily: 'poppins',
+                        mt: 2,
+                        ml:{ xs: 6, sm: 2, md: 9 },}}>
+                        IF You Want to more offers...
+                    </Typography>
+
+                <Button
+                    variant="contained"
+                    color="primary"
+                    href="https://wa.me/94756506423"
+                    target="_blank"
+                    sx={{
+                        mt: 4, ml:20,
+                        '&:hover': {
+                            background: 'linear-gradient(45deg, #070769ff 30%, #2a00e4ff 90%)',
+                            transform: 'scale(1.05)',
+                            transition: 'transform 0.3s ease-in-out',
+                        },
+                    }}
+                >
+                    Talk With Us
+                </Button>
+            </Box>
             </Box>
 
-            <Box
-                sx={{
-                bgcolor: '#3e0bf569',
-                p: 2,
-                ml: 32,
-                mt: 2,
-                width: { xs: 145, lg: 680 },
-                height: { xs: 200, lg: 150 },
-                borderRadius: '8px',
-                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-                }}
-            />
+
             </Grid>
 
             <Grid size={6} sx={{ display: 'flex', justifyContent: 'center' }}>
