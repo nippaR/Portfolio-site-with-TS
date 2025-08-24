@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Tabs, Tab, Typography } from '@mui/material';
 import Cards from '@/Component/Cards';
+import Versioncard from '@/Component/pages/Versioncard';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -59,7 +60,7 @@ interface TabPanelProps {
             </Tabs>
         </Box>
         <TabPanel value={value} index={0}><Cards/></TabPanel>
-        <TabPanel value={value} index={1}>Content for Page Two</TabPanel>
+        <TabPanel value={value} index={1}><Versioncard/></TabPanel>
         <TabPanel value={value} index={2}>Content for Page Three</TabPanel>
         </Box>
     );
